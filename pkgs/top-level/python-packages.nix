@@ -815,6 +815,10 @@ in {
 
   jwcrypto = callPackage ../development/python-modules/jwcrypto { };
 
+  kivy = callPackage ../development/python-modules/kivy { };
+
+  kivy-garden = callPackage ../development/python-modules/kivy-garden { };
+
   kconfiglib = callPackage ../development/python-modules/kconfiglib { };
 
   labelbox = callPackage ../development/python-modules/labelbox { };
