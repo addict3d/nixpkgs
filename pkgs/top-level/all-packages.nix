@@ -3145,6 +3145,8 @@ in
 
   dev86 = callPackage ../development/compilers/dev86 { };
 
+  diagrams = with python3.pkgs; toPythonApplication diagrams;
+
   diskrsync = callPackage ../tools/backup/diskrsync { };
 
   djbdns = callPackage ../tools/networking/djbdns { };
@@ -15332,6 +15334,8 @@ in
   rotate-backups = with python3Packages; toPythonApplication rotate-backups;
 
   rote = callPackage ../development/libraries/rote { };
+
+  round = callPackage ../applications/graphics/round { };
 
   ronn = callPackage ../development/tools/ronn { };
 
