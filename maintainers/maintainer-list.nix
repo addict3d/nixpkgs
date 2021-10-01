@@ -242,6 +242,7 @@
   };
   addict3d = {
     email = "nickbathum@gmail.com";
+    matrix = "@nbathum:matrix.org";
     github = "addict3d";
     githubId = 49227;
     name = "Nick Bathum";
