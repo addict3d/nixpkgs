@@ -1,4 +1,4 @@
-{ jdk8, jdk11, jdk17, lib }:
+{ lib, jdk8, jdk11, jdk17 }:
 
 rec {
   gen =
@@ -110,7 +110,7 @@ rec {
                 mkdir $out/nix-support
                 echo ${stdenv.cc.cc} > $out/nix-support/manual-runtime-dependencies
                 # Gradle will refuse to start without _both_ 5 and 6 versions of ncurses.
-                { echo "${ncurses5}"; echo "${ncurses6}"; } >> $out/nix-support/manual-runtime-dependencies
+                echo -e "${ncurses5}\n${ncurses6}" >> $out/nix-support/manual-runtime-dependencies
               '';
 
             meta = with lib; {
